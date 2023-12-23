@@ -53,7 +53,8 @@ const Clients = () => {
         className="mySwiper"
         breakpoints={{
           328: {
-            slidesPerView: 4,
+            slidesPerView: 3,
+            spaceBetween: 50,
           },
           768: {
             slidesPerView: 5,
