@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section className="flex items-center justify-center bg-white overflow-hidden pt-40">
+    <section className="flex items-center justify-center bg-white overflow-hidden lg:pt-40 ">
       <div className="px-4 py-20 mx-auto max-w-7xl">
         <div className="flex flex-wrap">
           <div className="relative w-full mb-10 lg:mb-0 lg:mr-20 lg:w-2/5">

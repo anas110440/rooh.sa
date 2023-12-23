@@ -51,6 +51,17 @@ const Clients = () => {
         freeMode={true}
         modules={[Parallax, Autoplay, FreeMode]}
         className="mySwiper"
+        breakpoints={{
+          328: {
+            slidesPerView: 4,
+          },
+          768: {
+            slidesPerView: 5,
+          },
+          1024: {
+            slidesPerView: 7,
+          },
+        }}
       >
         <SwiperSlide>
           <div
