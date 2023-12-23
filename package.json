@@ -10,10 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-spring/three": "^9.7.3",
+    "@react-three/drei": "^9.88.15",
+    "@react-three/fiber": "^8.15.11",
+    "@types/three": "^0.158.2",
     "aos": "^2.3.4",
+    "lamina": "^1.1.23",
+    "leva": "^0.9.34",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "swiper": "^10.0.0"
+    "swiper": "^10.0.0",
+    "three": "^0.158.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

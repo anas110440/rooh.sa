@@ -10,6 +10,7 @@ import Value from './Components/Value';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { useEffect } from 'react';
+import Gallery from './Components/Gallery';
 function App() {
   useEffect(() => {
     AOS.init({});
@@ -36,6 +37,7 @@ function App() {
       </div>
       <About />
       <Value />
+      <Gallery />
       <Services />
       <div className="relative  mt-20 rotate-180">
         <svg
