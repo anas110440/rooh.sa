@@ -5,7 +5,7 @@ import { Neom } from './models/Neom';
 const Gallery = () => {
   return (
     <div className="bg-gray-900 pt-12 pb-28">
-      <div className="max-w-5xl mx-auto text-center mb-16 mt-12">
+      <div className=" mx-auto text-center mb-16 mt-12 overflow-hidden">
         <div className="relative">
           <h1 className="text-5xl font-bold text-white " data-aos="fade-up">
             {' '}
@@ -24,21 +24,21 @@ const Gallery = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 container mx-auto  px-10 py-10">
         <div className="grid gap-4">
           <div>
-            <div className="h-96 max-w-full rounded-lg overflow-hidden">
+            <div className="h-96 w-full mb-6 lg:mb-0  rounded-lg overflow-hidden">
               <Award />
             </div>
           </div>
         </div>
         <div className="grid gap-4">
           <div>
-            <div className="h-96 max-w-full rounded-lg overflow-hidden">
+            <div className="h-96 w-full mb-6 lg:mb-0  rounded-lg overflow-hidden">
               <Award2 />
             </div>
           </div>
         </div>
         <div className="grid gap-4">
           <div>
-            <div className="h-96 max-w-full rounded-lg overflow-hidden">
+            <div className="h-96 w-full mb-6 lg:mb-0  rounded-lg overflow-hidden">
               <Neom />
             </div>
           </div>
