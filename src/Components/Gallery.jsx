@@ -1,6 +1,23 @@
+import { useState } from 'react';
 import { Award } from './models/Award';
 import { Award2 } from './models/Award2';
 import { Neom } from './models/Neom';
+import { Children } from 'react';
+
+const Item = ({ children }) => {
+  const [hover, setHover] = useState(false);
+  return (
+    <div
+      className={`h-96 w-full mb-6 lg:mb-0  rounded-lg overflow-hidden ${
+        hover ? 'cursor-grabbing' : 'cursor-grab'
+      }`}
+      onMouseDown={() => setHover(true)}
+      onMouseUp={() => setHover(false)}
+    >
+      {children}
+    </div>
+  );
+};
 
 const Gallery = () => {
   return (
@@ -24,23 +41,23 @@ const Gallery = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 container mx-auto  px-10 py-10">
         <div className="grid gap-4">
           <div>
-            <div className="h-96 w-full mb-6 lg:mb-0  rounded-lg overflow-hidden">
+            <Item>
               <Award />
-            </div>
+            </Item>
           </div>
         </div>
         <div className="grid gap-4">
           <div>
-            <div className="h-96 w-full mb-6 lg:mb-0  rounded-lg overflow-hidden">
+            <Item>
               <Award2 />
-            </div>
+            </Item>
           </div>
         </div>
         <div className="grid gap-4">
           <div>
-            <div className="h-96 w-full mb-6 lg:mb-0  rounded-lg overflow-hidden">
+            <Item>
               <Neom />
-            </div>
+            </Item>
           </div>
         </div>
       </div>
