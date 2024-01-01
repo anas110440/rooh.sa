@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Award } from './models/Award';
 import { Award2 } from './models/Award2';
 import { Neom } from './models/Neom';
-import { Children } from 'react';
 
+// eslint-disable-next-line react/prop-types
 const Item = ({ children }) => {
   const [hover, setHover] = useState(false);
   return (
